@@ -1,19 +1,13 @@
-div.dice{
- float: none;
- widgth:5px;
- background: #B2f187;
- border: #999 20px solid;
- padding: 50px;
- font-size: 30px;
- text-align:  center;
- margin: 20px;
-
+jumbotron{
+  height: 50px
+  background-color: #d3d3d3;
 }
+
 .container{
   text-align: center;
   padding: 50px 100px;
 }
-.btn{
+#new-game{
   border: none;
   background-color: yellow;
    color: black;
