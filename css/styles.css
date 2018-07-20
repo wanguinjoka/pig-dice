@@ -1,0 +1,27 @@
+div.dice{
+ float: none;
+ widgth:5px;
+ background: #B2f187;
+ border: #999 20px solid;
+ padding: 50px;
+ font-size: 30px;
+ text-align:  center;
+ margin: 20px;
+
+}
+.container{
+  text-align: center;
+  padding: 50px 100px;
+}
+.btn{
+  border: none;
+  background-color: yellow;
+   color: black;
+   padding: 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   border-radius: 50%
+}
