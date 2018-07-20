@@ -23,6 +23,7 @@ Player.prototype.rollone = function() {
   } else {
   this.tempscore += this.roll;
   }
+}
 
 // hold
 Player.prototype.hold = function () {
@@ -32,6 +33,14 @@ Player.prototype.hold = function () {
   alert(this.playerName + ", your turn is over, pass the mouse!");
 }
 
+// // changing turn
+// Player.prototype.changeturn = function () {
+//   if (this.roll ===1) {
+//     this.turn = false;
+//   } else {
+//     this.turn = true;
+//   }
+// }
 // check for 100
 Player.prototype.winnerCheck = function () {
   if (this.totalscore >= 100) {
@@ -59,7 +68,7 @@ $(document).ready(function() {
     player1 = new Player(true);
     player2 =  new Player(false);
     // $(".player-console").show();
-    $(".start-menu").hide();
+    // $(".start-menu").hide();
 
     var player1Name = $(".player1Name").val();
     $("#player1Name").text(player1Name);
@@ -72,7 +81,7 @@ $(document).ready(function() {
 
   });
   $("button#new-game").click(function(event){
-    $(".player-console").hide();
+    // $(".player-console").hide();
     clearValues();
     player1.newGame();
     player2.newGame();
@@ -86,7 +95,7 @@ $(document).ready(function() {
     $(".start-menu").show();
   });
 
-  $("button#player1-rollDice").click(function(event){
+  $("button#player1-roll").click(function(event){
     player1.roll = throwdice();
     $("#die-roll-1").text(player1.roll);
     player1.rollone();

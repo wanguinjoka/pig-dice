@@ -1,13 +1,20 @@
-jumbotron{
-  height: 50px
-  background-color: #d3d3d3;
-}
-
-.container{
-  text-align: center;
-  padding: 50px 100px;
+.start-menu container{
+  height: 20px;
+  background-color: green;
 }
 #new-game{
+  border: none;
+  background-color: yellow;
+   color: black;
+   padding: 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   border-radius: 50%
+}
+#start{
   border: none;
   background-color: yellow;
    color: black;
